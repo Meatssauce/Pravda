@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Pravda",
+  "description": "This extension reveals potentially unreliable news articles.",
+  "version": "0.1",
+
+  "icons": {
+    "16": "pravda_16.png",
+    "48": "pravda_48.png",
+    "128": "pravda_128.png" 
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "pravda_16.png",
+    "default_popup": "popup.html",
+    "default_title": "Pravda\n\nLeft-click to verify!\nRight-click for options."
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "http://127.0.0.1:5000/*"
+  ]
+}

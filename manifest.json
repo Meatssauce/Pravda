@@ -6,9 +6,9 @@
   "version": "0.1",
 
   "icons": {
-    "16": "pravda_16.png",
-    "48": "pravda_48.png",
-    "128": "pravda_128.png" 
+    "16": "logo2_16.png",
+    "48": "logo2_48.png",
+    "128": "logo2_128.png"
   },
 
   "background": {
@@ -16,7 +16,7 @@
   },
 
   "browser_action": {
-    "default_icon": "pravda_16.png",
+    "default_icon": "logo2_16.png",
     "default_popup": "popup.html",
     "default_title": "Pravda\n\nLeft-click to verify!\nRight-click for options."
   },

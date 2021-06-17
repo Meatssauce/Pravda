@@ -70,8 +70,8 @@ const HOST_URL = 'http://127.0.0.1:5000/predict'
 // chrome.tabs.executeScript({code: script})
 
 // Get prediction
-document.getElementById('loadingSign').style.visibility = 'visible'
-document.getElementById('result').style.visibility = 'hidden'
+document.getElementById('loadingSign').style.display = 'block'
+document.getElementById('result').style.display = 'none'
 
 const queryInfo = {
     active: true,
@@ -88,8 +88,8 @@ chrome.tabs.query(queryInfo, function(tabs) {
     })
     .then(response => response.json())
     .then(predictions => {
-        document.getElementById('loadingSign').style.visibility = 'hidden'
-        document.getElementById('result').style.visibility = 'visible'
+        document.getElementById('loadingSign').style.display = 'none'
+        document.getElementById('result').style.display = 'block'
 
         const flag = predictions['flag'][0]
         switch (flag) {

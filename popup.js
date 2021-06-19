@@ -95,19 +95,19 @@ chrome.tabs.query(queryInfo, function(tabs) {
         switch (flag) {
             case 0:
                 if (predictions['reliability'][0] == 1) {
-                    document.getElementById('result').src = 'assets/warnings3/reliable.png'
+                    document.getElementById('result').src = 'assets/warnings3/reliable large.png'
                 } else {
-                    document.getElementById('result').src = 'assets/warnings3/unreliable.png'
+                    document.getElementById('result').src = 'assets/warnings3/unreliable large.png'
                 }
                 break
             case 1:
-                document.getElementById('result').src = 'assets/warnings3/wrong_language.png'
+                document.getElementById('result').src = 'assets/warnings3/wrong language large.png'
                 break
             case 2:
-                document.getElementById('result').src = 'assets/warnings3/paywall.png'
+                document.getElementById('result').src = 'assets/warnings3/paywall large.png'
                 break
             default:
-                document.getElementById('result').src = 'assets/warnings3/wrong_language.png'
+                document.getElementById('result').src = 'assets/warnings3/wrong language large.png'
         }
 
         // const code = 'window.location.reload();'
